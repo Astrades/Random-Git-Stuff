@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.3"
+  - "3.4"
+  - "3.5"
+before_install:
+  - sudo apt-get -qq update
+install:
+  - pip install -r requirements.txt
+script:
+  - scrapy bench
+  - cd qetesh-src
+  - scrapy crawl collector --set CLOSESPIDER_ITEMCOUNT=1 --loglevel WARNING
