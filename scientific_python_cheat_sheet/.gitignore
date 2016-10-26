@@ -1,0 +1,10 @@
+# ignore tex compilation files (created by emacs and latex)
+*.aux
+*.log
+*.gz
+index.html
+sheet.html
+template.html
+github.css
+auto/*
+
