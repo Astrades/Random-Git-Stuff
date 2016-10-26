@@ -1,0 +1,249 @@
+/* --- loading-anim CSS -- */
+
+.loader {
+    max-width: 200px;
+	height: 40px;
+}
+.loader span {
+	border-radius: 35px;
+    border: 2px solid rgba(133, 191, 128, 0.43);
+    width: 60px;
+    height: 140px;
+    background: linear-gradient(-50deg, rgba(10, 103, 114, 0.18), rgba(49, 128, 121, 0.65));
+    position: absolute;
+    left: 0;
+    transform-origin: left right;
+    transform: rotate(90deg);
+    animation-name: load;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.49, 0.01, 0.51, 1.12);
+    animation-iteration-count: infinite;
+}
+.loader span:nth-child(1) {
+  left: 9px;
+  animation-delay: 0.05s;
+}
+.loader span:nth-child(2) {
+  left: 18px;
+  animation-delay: 0.1s;
+}
+.loader span:nth-child(3) {
+  left: 27px;
+  animation-delay: 0.15s;
+}
+.loader span:nth-child(4) {
+  left: 36px;
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(5) {
+  left: 45px;
+  animation-delay: 0.25s;
+}
+.loader span:nth-child(6) {
+  left: 54px;
+  animation-delay: 0.3s;
+}
+.loader span:nth-child(7) {
+  left: 63px;
+  animation-delay: 0.35s;
+}
+.loader span:nth-child(8) {
+  left: 72px;
+  animation-delay: 0.4s;
+}
+.loader span:nth-child(9) {
+  left: 81px;
+  animation-delay: 0.45s;
+}
+.loader span:nth-child(10) {
+  left: 90px;
+  animation-delay: 0.5s;
+}
+.loader span:nth-child(11) {
+  left: 99px;
+  animation-delay: 0.55s;
+}
+.loader span:nth-child(12) {
+  left: 108px;
+  animation-delay: 0.6s;
+}
+.loader span:nth-child(13) {
+  left: 117px;
+  animation-delay: 0.65s;
+}
+.loader span:nth-child(14) {
+  left: 126px;
+  animation-delay: 0.7s;
+}
+.loader span:nth-child(15) {
+  left: 135px;
+  animation-delay: 0.75s;
+}
+.loader span:nth-child(16) {
+  left: 144px;
+  animation-delay: 0.8s;
+}
+.loader span:nth-child(17) {
+  left: 153px;
+  animation-delay: 0.85s;
+}
+.loader span:nth-child(18) {
+  left: 162px;
+  animation-delay: 0.9s;
+}
+.loader span:nth-child(19) {
+  left: 171px;
+  animation-delay: 0.95s;
+}
+.loader span:nth-child(20) {
+  left: 180px;
+  animation-delay: 1s;
+}
+@keyframes load {
+  to {
+    transform: rotate(450deg);
+  }
+}
+
+/* --- loading-anim CSS -- */
+#mainPopup{
+	box-shadow: 3px 10px 79px 3px rgb(0, 0, 0);
+    background: url("../../img/pattern.png");
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 800px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(29, 197, 184);
+    border-radius: 46px;
+}
+#HistoryList{
+	margin-top: 0px;
+	text-align:center;
+}
+#artists{
+	color:white;
+	font-weight:bold;
+}
+.songTitleHistory{
+	color:white;
+	font-size:15px;
+	font-weight:bold;
+}
+.albumNameShow{
+	color: #0a6772;
+	font-size:15px;
+	padding-bottom:5px;
+}
+.previewAlbum{
+	color: #0a6772;
+    font-weight: bold;
+	padding-bottom: 5px;
+}
+.previewSong:hover{
+	background-color:rgba(255, 255, 255, 0.15);
+	cursor:pointer;
+}
+.previewSong{
+	margin-bottom:12px;
+	padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.artistNamePreview{
+	color:white;
+	font-size:15px;
+	font-weight: lighter;
+}
+#logoFlip{
+	box-shadow: 3px 10px 72px -9px rgba(0,0,0,0.75);
+	height:78px;
+	border-radius: 50px;
+    margin-bottom: 10px;
+}
+#ACRCloudLogo{
+	display: block;
+	margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#iconPicture{
+	width:78px;
+	height:33px;
+	margin-top: auto;
+    margin-bottom: auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-image:url("../../img/Icon_beat_finder_.png");
+}
+#iconPictureFlipped{
+	width:78px;
+	height:33px;
+	margin-top: auto;
+    margin-bottom: auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-image:url("../../img/Icon_beat_finder_Flipped.png");
+}
+#audioInfo{
+	color: rgb(255, 255, 255);
+	padding-top: 10px;
+	text-align:center;
+	font-weight: bold;
+    font-size: 15px;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+ 
+#recordButton{
+    text-align: center;
+	font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+#timeSlider{
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 200px;
+}
+#logoFlip:hover{
+	cursor:pointer;
+}
+
+html{
+	max-height: 800px;
+
+}
+
+body {    
+    background-color: #54CDC3;
+	font-family: Roboto,arial,sans-serif;
+	width:270px;
+}
+
+#external_links{
+    padding: 5px;
+}
+.infoBlock{
+	margin-bottom:5px;
+}
+.artistName{
+	font-size:25px;
+}
+.songTitle{
+	font-size: 20px;
+    padding-bottom: 5px;
+	font-weight:normal;
+}
+.external_link{
+	text-decoration: none;
+}
