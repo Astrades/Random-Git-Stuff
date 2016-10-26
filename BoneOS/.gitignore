@@ -1,0 +1,8 @@
+#Cross Compiler Folder
+cross/
+
+#Binary File
+BoneOS.bin
+
+#Output Files
+*.o
